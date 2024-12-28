@@ -1,4 +1,10 @@
 pandas
 numpy
 seaborn
--e .
+dill
+scikit-learn
+requests
+joblib
+Flask==2.2.3
+flask_cors
+# -e .
