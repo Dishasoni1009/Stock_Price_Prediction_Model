@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Prediction</h1>
+        
+        <!-- Input Section -->
+        <form id="predictionForm">
+            <label for="symbol">Stock Symbol (e.g., BTCUSDT):</label>
+            <input type="text" id="symbol" placeholder="Enter Stock Symbol" required>
+            
+            <label for="interval">Time Interval (minutes):</label>
+            <input type="number" id="interval" placeholder="e.g., 5" required>
+            
+            <label for="limit">Data Points Limit:</label>
+            <input type="number" id="limit" placeholder="e.g., 1000" required>
+            
+            <button type="submit">Fetch & Predict</button>
+        </form>
+
+        <!-- Display Section -->
+        <div id="output">
+            <h3>Prediction Results</h3>
+            <p id="results">No predictions yet...</p>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
